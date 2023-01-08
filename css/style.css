@@ -107,3 +107,110 @@ img {
   line-height: 1.1;
   margin: 0 0 2rem;
 }
+
+/* Utility Classes */
+
+/* Tabs */
+.tabs {
+  background: var(--dark-color);
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tabs p {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
+
+.tabs .container > div {
+  padding: 1.5rem 0;
+}
+
+.tabs .container > div:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.tab-border {
+  border-bottom: var(--primary-color) 4px solid;
+}
+
+/* Tab Content */
+.tab-content {
+  padding: 3rem 0;
+  background: #000;
+  color: #fff;
+}
+
+/*  Hide content Initially  */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+#tab-1-content .tab-1-content-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#tab-2-content .tab-2-content-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#tab-2-content .tab-2-content-bottom {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*  Table  */
+.table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table thead th {
+  text-transform: uppercase;
+  padding: 0.8rem;
+}
+
+.table tbody tr td {
+  color: #999;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+}
+
+.table tbody tr td:first-child {
+  text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+  background: #222;
+}
