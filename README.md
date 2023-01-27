@@ -34,6 +34,9 @@ A basic warmup exercise. Simple, practice oriented, clone of the Netflix Homepag
 
 Usually, people tend to run to CSS Frameworks to develop and style tabs and switching tabs. But here's a pretty simple, basic way of creating switchable tab content using Vanilla JS:
 
+## Screenshot
+![Screenshot (304)](https://user-images.githubusercontent.com/93200960/215095288-91c46b4c-69bd-4afc-aad8-694dfe41fbc1.png)
+
 ```javascript
 const tabItems = document.querySelectorAll(".tab-item");
 const tabContentItems = document.querySelectorAll(".tab-content-item");
